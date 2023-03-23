@@ -1,0 +1,45 @@
+.header {
+    padding: 20px 0;
+    background-color: white;
+}
+.header-container {
+    display: flex;/*display: flex; aligne sur la même ligne et display: block; pour aller a la ligne*/  
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 60px;
+    object-fit: contain;
+}
+.main-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu li:last-child a{ /*last-child a Nous permet de cibler le dernier a*/
+    background: linear-gradient(180deg, #388AF7 0%, #2B5C99 100%);
+    border-radius: 4px;
+    padding: 16px 24px;
+    color: white;
+} 
+
+/* Tablette 768px*/
+@media screen and (min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-menu {
+        display: none;
+    }
+}
